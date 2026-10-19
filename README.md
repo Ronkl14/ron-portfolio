@@ -31,7 +31,7 @@ React 19, TypeScript, Vite 6, and Lucide icons. The layout and interactions use 
 
 ## Deployment
 
-GitHub Actions builds the site and deploys `dist/` to GitHub Pages when changes are pushed to `main`. Vite is configured for the repository path `/ron-portfolio/`.
+The live site is hosted on GitHub Pages from the `gh-pages` branch. Vite is configured for the repository path `/ron-portfolio/`. To publish updates, run `npm ci` and `npm run build`, then publish the contents of `dist/` to the root of `gh-pages`.
 
 ## Contact
 
