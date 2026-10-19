@@ -49,7 +49,8 @@ export default function GeoHeatProject() {
                 <span key={technology}>{technology}</span>
               ))}
             </div>
-            <div className="geoheat-links">
+            <div className="geoheat-links">             
+              <a href="https://geoheat-studio-production.up.railway.app/" target="_blank" rel="noopener noreferrer">Live demo <ArrowUpRight size={14} aria-hidden="true" /></a>
               <a
                 href="https://github.com/Ronkl14/geoheat-studio"
                 target="_blank"
