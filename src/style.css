@@ -24,3 +24,50 @@
 .language-pair .product-shot{height:285px;padding:8px}
 @media(max-width:850px){.product-gallery-grid{grid-template-columns:1fr 1fr}.language-comparison{grid-template-columns:1fr}}
 @media(max-width:600px){.portrait-stage{max-width:300px}.product-gallery-grid,.language-pair{grid-template-columns:1fr}.shot-desktop,.shot-mobile{height:340px}.gallery-strip{grid-template-columns:1fr 1fr}.gallery-strip .product-shot{height:240px}.language-pair .product-shot{height:260px}.gallery-heading{font-size:8px}}
+
+
+/* Interactive Beauty Booking gallery */
+.bb-galleries{display:grid;grid-template-columns:minmax(0,1.35fr) minmax(300px,.85fr);gap:22px}
+.bb-carousel{min-width:0;background:#141b22;border:1px solid #34413e;padding:20px}
+.bb-carousel-head{display:flex;justify-content:space-between;align-items:start;gap:8px}
+.bb-carousel-head h4{font-size:23px;margin:12px 0 8px;letter-spacing:-.045em}
+.bb-counter{font:11px 'DM Mono',monospace;color:#c6fb78}
+.bb-stage{position:relative;min-height:450px;display:flex;justify-content:center;align-items:center;gap:8px}
+.bb-photo-button{position:relative;display:block;border:0;color:inherit;cursor:zoom-in;min-width:0}
+.bb-web{width:100%;max-width:700px;padding:0;background:#10161b;border:1px solid #405048;box-shadow:0 18px 50px #0007}
+.bb-web>img{display:block;width:100%;height:395px;object-fit:contain}
+.bb-browser-bar{height:30px;display:flex;align-items:center;gap:5px;border-bottom:1px solid #38433d;padding:0 12px}
+.bb-browser-bar span{height:7px;width:7px;border-radius:50%;background:#68756d}
+.bb-browser-bar small{font:10px 'DM Mono',monospace;color:#77877e;margin-left:12px}
+.bb-phone{width:220px;height:445px;padding:8px;background:#080a0d;border:3px solid #525d5a;border-radius:38px;box-shadow:0 20px 55px #000a;flex:none}
+.bb-phone-screen{position:relative;border-radius:29px;overflow:hidden;width:100%;height:100%;background:#fff}
+.bb-phone-screen img{display:block;width:100%;height:100%;object-fit:contain}
+.bb-phone-island{position:absolute;top:7px;left:50%;transform:translateX(-50%);width:68px;height:15px;border-radius:20px;background:#090b10;z-index:2}
+.bb-zoom{position:absolute;right:10px;bottom:10px;display:flex;align-items:center;gap:5px;background:#0c111de8;color:white;padding:8px 9px;font-size:11px;border-radius:5px}
+.bb-nav{width:34px;height:44px;flex:none;display:grid;place-items:center;border:1px solid #48594b;color:#c6fb78;background:#1b2725;cursor:pointer}
+.bb-nav:hover,.bb-thumb:hover{border-color:#c6fb78}
+.bb-caption{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin:8px 0 12px;color:#dbe4da;font-size:12px}
+.bb-caption span{color:#9aaca2}
+.bb-thumbs{display:flex;gap:7px;overflow-x:auto;padding:4px 0 7px}
+.bb-thumb{flex:0 0 62px;width:62px;height:54px;border:2px solid transparent;background:#25302d;padding:3px;cursor:pointer}
+.bb-thumb.active{border-color:#c6fb78}
+.bb-thumb img{height:100%;width:100%;object-fit:contain}
+.bb-localize{display:grid;grid-template-columns:1fr 1.25fr;align-items:center;gap:35px;margin-top:28px;background:#131d20;border:1px solid #37463c;padding:28px}
+.bb-localize h3{font-size:clamp(26px,3vw,40px);letter-spacing:-.05em;margin:20px 0 10px}
+.bb-localize h3 em{color:#c6fb78}
+.bb-localize p{color:#aab8b2;line-height:1.8}
+.bb-select-view,.bb-language-tabs{display:flex;gap:7px;flex-wrap:wrap}
+.bb-select-view button,.bb-language-tabs button{color:#b5c4b8;background:#1d2929;border:1px solid #415248;padding:9px 13px;cursor:pointer;font:11px 'DM Mono',monospace}
+.bb-select-view button.active,.bb-language-tabs button.active{background:#c6fb78;color:#172017;border-color:#c6fb78}
+.bb-language-tabs{margin-bottom:10px}
+.bb-translation-image{position:relative;width:100%;border:1px solid #405149;background:#10161a;padding:10px;cursor:zoom-in}
+.bb-translation-image img{width:100%;height:295px;display:block;object-fit:contain}
+.bb-translation-image svg{position:absolute;right:18px;bottom:18px;color:#c6fb78}
+.bb-lightbox{position:fixed;inset:0;background:#05080af2;z-index:9999;display:flex;align-items:center;justify-content:center;gap:20px;padding:28px}
+.bb-lightbox-close{position:absolute;top:20px;right:22px;background:#28342d;color:white;border:1px solid #526457;padding:10px;cursor:pointer}
+.bb-lightbox-arrow{flex:none;background:#1d2c25;color:#c6fb78;border:1px solid #586a5c;padding:12px;cursor:pointer}
+.bb-lightbox-content{min-width:0;max-width:min(1100px,85vw);max-height:90vh;display:flex;flex-direction:column;gap:8px}
+.bb-lightbox-content img{max-height:78vh;max-width:100%;width:auto;object-fit:contain;margin:auto;display:block}
+.bb-lightbox-content>div{display:flex;gap:25px;justify-content:center;color:#ccd5cb;font-size:13px}
+@media(max-width:950px){.bb-galleries,.bb-localize{grid-template-columns:1fr}.bb-stage{min-height:380px}.bb-web>img{height:320px}}
+@media(max-width:600px){.bb-carousel{padding:12px}.bb-stage{gap:3px;min-height:325px}.bb-nav{width:27px;height:38px}.bb-web>img{height:245px}.bb-phone{height:365px;width:179px}.bb-localize{padding:15px}.bb-translation-image img{height:230px}.bb-lightbox{padding:8px;gap:4px}.bb-lightbox-arrow{padding:5px}.bb-lightbox-content{max-width:calc(100vw - 100px)}}
