@@ -1,39 +1,40 @@
-# Ron Klik — Developer Portfolio
+# Ron Klik - Developer Portfolio
 
-A responsive, single-page engineering portfolio built with React, TypeScript, Vite, and custom CSS.
+A responsive, single-page portfolio built with React, TypeScript, Vite, and custom CSS.
+
+## Featured projects
+
+- **Beauty Booking** - An independent commercial scheduling SaaS for beauty businesses, currently in development and pre-launch. Product mockups are illustrative. The private product repository and customer data are not included here.
+- **GeoHeat Studio** - A reusable geospatial data visualization MVP. It parses CSV and XLSX locally, supports manual column mapping and user-confirmed place lookup, and displays Leaflet markers and heatmaps with filters and CSV export. [Source repository](https://github.com/Ronkl14/geoheat-studio).
+
+The portfolio also describes professional experience at One Digital, Unit 9900, and Outbox, along with education and technical skills.
 
 ## Run locally
 
+Requirements: Node.js 22 and npm.
+
 ```bash
-npm install
+npm ci
 npm run dev
 ```
 
-To make a production bundle:
+Create and preview a production build:
 
 ```bash
 npm run build
 npm run preview
 ```
 
-The compiled static site will be in `dist/`, ready for deployment to Vercel, Cloudflare Pages, or Netlify.
+## Technologies
 
-## Content and publishing checklist
-
-- Review every professional-experience description, technology claim, and engineering detail before publishing.
-- Current Beauty Booking status is **commercial SaaS in development / pre-launch**. Do not call it launched until it has launched.
-- The schedule mockup is **illustrative**, not an actual screenshot. Replace it with sanitized screenshots of the real product when possible.
-- The main contact address is `ron.klik@gmail.com`. Update as required.
-- Add verified GitHub / LinkedIn links once those profiles have been refreshed. They are intentionally not linked to avoid placeholders or broken destinations.
-- Add a publicly shareable PDF résumé (e.g. `/Ron-Klik-CV.pdf`) and a download button when final.
-- The website is a portfolio; it is not connected to the private Beauty Booking repository or live customer data.
-- Carefully recheck the 2024 service/employment overlap and timeline before publication.
-- The architecture diagram is intentionally simplified.
+React 19, TypeScript, Vite 6, and Lucide icons. The layout and interactions use custom CSS and client-side React components.
 
 ## Deployment
 
-In Vercel or Cloudflare Pages, import this repository and configure build command `npm run build`, output directory `dist`.
+GitHub Actions builds the site and deploys `dist/` to GitHub Pages when changes are pushed to `main`. Vite is configured for the repository path `/ron-portfolio/`.
 
-## Notes
+## Contact
 
-No proprietary source code, customer data, private keys, or API credentials are included.
+[ron.klik@gmail.com](mailto:ron.klik@gmail.com)
+
+No proprietary Beauty Booking source code, customer data, API credentials, or private keys are included in this repository.
