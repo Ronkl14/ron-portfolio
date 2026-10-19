@@ -2,6 +2,8 @@
 
 A responsive, single-page portfolio built with React, TypeScript, Vite, and custom CSS.
 
+Live site: https://ronkl14.github.io/ron-portfolio/
+
 ## Featured projects
 
 - **Beauty Booking** - An independent commercial scheduling SaaS for beauty businesses, currently in development and pre-launch. Product mockups are illustrative. The private product repository and customer data are not included here.
